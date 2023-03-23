@@ -247,6 +247,10 @@ footer div.links col:not(.fourth-col){
   .flex:not(main div.container,.first-col){
     flex-direction: row;
   }
+  .bg-header{
+    background: url(./images/bg-hero-desktop.svg)no-repeat right center;
+    background-size: cover;
+  }
   .header-sec{
     padding: 0;
     gap:6rem;
