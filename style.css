@@ -37,10 +37,10 @@ body{
 }
 .container{
   width:clamp(30rem,90vw,130rem);
-  padding: 3rem 0;
+  padding: clamp(3rem,4vw,4rem) 0;
 
  margin-inline:  auto;
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem,3vw,3rem);
 }
 img{
   width: 100%;
@@ -59,7 +59,8 @@ img{
   font-size: clamp(1.2rem,2vw,1.4rem);
 }
 h1,h2,p{
-  margin-bottom: 2rem;
+  margin-bottom: clamp(2rem,3vw,3rem);
+  
 }
 h1,h2{
   color: var(--Very-Dark-Cyan);
@@ -83,14 +84,14 @@ p,li{
 /* HEADER SECTION */
 .header{
   background-color: var(--Very-Pale-Cyan);
-  padding: 2rem 0;
+  padding-top: clamp(1rem,3vw,1.5rem);
 }
 .bg-header{
   background: url(./images/bg-hero-mobile.svg)no-repeat right center;
   background-size: cover;
 }
 .nav{
-  margin-bottom: 8rem;
+  margin-bottom: clamp(6rem,5vw,8rem);
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -101,7 +102,7 @@ p,li{
 }
 .btn-white{
   background-color: var(--white);
-  padding: 0.6rem 3rem;
+  padding:clamp(0.6rem,2vw,1.2rem) clamp(3rem,6vw,6rem);
 }
 .btn-white:hover{
   color: var(--Grayish-Blue);
@@ -114,14 +115,13 @@ p,li{
 }
 .btn-pink{
   background-color: var(--Pink);
-  padding: 1rem 6rem;
+  padding: clamp(1.2rem,2vw,2rem) clamp(6rem,9vw,8rem);
   color: var(--Very-Pale-Cyan);
-  margin: 1rem 0;
 }
 
 /* MAIN SECTION */
 main{
-  padding: 15rem 0 25rem 0;
+  padding: clamp(10rem,12vw,15rem) 0 clamp(20rem,20vw,25rem) 0;
 
 }
 
@@ -131,7 +131,7 @@ main div.container{
 }
 .box{
   border-radius: 1rem;
-  padding:3.5rem;
+  padding:clamp(3rem,4vw,3.5rem) clamp(3rem,4vw,3.5rem) clamp(3rem,4vw,3.5rem) clamp(3rem,9vw,11rem) ;
   align-items: center;
   gap:3.5rem;
 }
@@ -144,8 +144,8 @@ main div.container{
 
 /* Small Box */
 .small-box{
-  margin:-15rem auto 5rem auto;
-  padding: 5rem 2rem;
+  margin:-15rem auto clamp(4rem,5vw,6rem) auto;
+  padding: clamp(4rem,5.5vw,5.5rem) clamp(2rem,3vw,3rem);
   z-index: 1;
   background-color: var(--white);
   border-radius: 1rem;
@@ -153,7 +153,7 @@ main div.container{
   text-align: center;
 }
 .btn-light-pink{
- padding:1rem 5rem;
+  padding: clamp(1.2rem,2vw,2.2rem) clamp(4rem,9vw,10rem);
  background-color:var(--Pink) ;
  box-shadow: 2px 4px 25px  rgba(0,0,0,0.2);
  color: var(--Very-Pale-Cyan);
@@ -177,11 +177,11 @@ footer div.container{
 }
 .footer-img{
   width:clamp(15rem,15vw,21rem);
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2.5rem,4vw,4rem);
 }
 
 footer div.links div:first-child{
-  margin-bottom:3rem;
+  margin-bottom:clamp(2rem,3.5vw,3rem);
 }
 footer div.links col:not(.fourth-col){
   align-items: flex-start;
@@ -197,16 +197,16 @@ footer div.links col:not(.fourth-col){
   gap:2rem;
 }
 .first-col ul li img{
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 0.5rem;
+  width: clamp(1.5rem,2.2vw,2rem);
+  height: clamp(1.5rem,2.2vw,2rem);
+  margin-top: clamp(0.5rem,1.2vw,1rem);
 }
 .first-col ul li{
  
   align-self: flex-start;
 }
 .links .first-col ul li:last-child{
-  padding-right: 3rem;
+  padding-right:clamp(2.5rem,3vw,3rem);
 }
 .col:not(.first-col,.fourth-col) ul li:not(:last-child){
   margin-bottom: 1rem;
@@ -216,7 +216,7 @@ footer div.links col:not(.fourth-col){
   text-decoration: underline;
 }
 .third-col{
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2.2rem,3vw,3rem);
 }
 .fourth-col .flex{
   flex-direction: row;
@@ -227,17 +227,18 @@ footer div.links col:not(.fourth-col){
  gap: 2rem;
 }
 .fourth-col .flex li{
-  width: 3.5rem;
-  height:3.5rem;
+  width: clamp(3.5rem,3vw,4rem);
+  height:clamp(3.5rem,3vw,4rem);
   border-radius: 50%;
   border: 1px solid var(--Very-Pale-Cyan);
+  text-align: center;
 }
 .fourth-col .flex li:hover{
   cursor: pointer;
   border: 1px solid var(--Pink) ;
 }
 .fourth-col .flex li i{
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem,1.5vw,1.7rem);
   padding: 1rem;
  
 }
@@ -258,16 +259,6 @@ footer div.links col:not(.fourth-col){
   .btn{
     margin: 0;
   }
-  .btn-white{
-    padding: 1rem 6rem;
-  }
-  .btn-pink{
-    padding: 1rem 8rem;
-  }
-  .btn-light-pink{
-    padding: 2rem 10rem;
-  }
-  
   .bg-header{
     background: url(./images/bg-hero-desktop.svg)no-repeat right center;
     background-size: cover;
@@ -281,7 +272,6 @@ footer div.links col:not(.fourth-col){
   }
   .box{
    gap:10rem;
-    padding: 3rem 3rem 3rem 11rem;
   }
   .box article{
    width: 84%;
