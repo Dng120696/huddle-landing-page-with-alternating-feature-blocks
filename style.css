@@ -67,13 +67,13 @@ h1,h2{
   font-family: var(--ff-secondary);
 }
 h1{
-  font-size: clamp(2.5rem,5vw,3.6rem);
+  font-size: clamp(2.5rem,5vw,3.8rem);
 }
 h2{
-  font-size: clamp(1.8rem,4vw,2.6rem);
+  font-size: clamp(1.8rem,4vw,2.8rem);
 }
 p,li{
-  font-size: clamp(1.45rem,3.5vw,1.6rem);
+  font-size: clamp(1.45rem,3.5vw,1.7rem);
   font-weight: 400;
   
 }
@@ -121,13 +121,13 @@ p,li{
 
 /* MAIN SECTION */
 main{
-  padding: 25rem 0;
+  padding: 15rem 0 25rem 0;
 
 }
 
 main div.container{
   margin-bottom: 0;
-  gap: 3rem;
+  gap: 4rem;
 }
 .box{
   border-radius: 1rem;
@@ -173,7 +173,7 @@ footer {
   margin: 0 -1rem;
 }
 .footer-img{
-  width:clamp(15rem,15vw,20rem);
+  width:clamp(15rem,15vw,21rem);
   margin-bottom: 3rem;
 }
 
@@ -260,8 +260,9 @@ footer div.links col:not(.fourth-col){
     padding: 1rem 6rem;
   }
   .btn-light-pink{
-    padding: 1rem 5rem;
+    padding: 2rem 10rem;
   }
+  
   .bg-header{
     background: url(./images/bg-hero-desktop.svg)no-repeat right center;
     background-size: cover;
@@ -274,8 +275,8 @@ footer div.links col:not(.fourth-col){
     width: 65%;
   }
   .box{
-   gap:18rem;
-    padding: 3rem 3rem 3rem 10rem;
+   gap:10rem;
+    padding: 3rem 3rem 3rem 11rem;
   }
   .box article{
    width: 84%;
